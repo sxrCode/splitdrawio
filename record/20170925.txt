@@ -1,0 +1,15 @@
+App.main：
+1. encodeURIComponent():  将需要传递的字符转换为可传递的方式。
+为什么要进行URL编码 http://www.cnblogs.com/jerrysion/p/5522673.html
+uri的有效字符： ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~!*'();:@&=+$,/?#[]  
+所有非法字符（有效字符之外）均需编码才能传输。
+
+2. mxUtils.load（url）：同步获取某个url的数据，与之相对应 mxUtils.get: function(	url,onload,onerror,binary,timeout,ontimeout) 异步加载某个url数据。
+返回mxXmlRequest对象。
+
+3. mxXmlRequest，一次请求的抽象。
+返回数据有两个接口方法获取 getXml(), getText(). getDocumentElement()获取xml的documentElement.
+
+4. mxResources,加载并存储key/value格式内容的文件，便于获取。
+
+5. Graph.panningHandler
