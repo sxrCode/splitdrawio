@@ -1,0 +1,15 @@
+<mxGraphModel>
+	<root>
+		<MyDiagram id="0">
+			<mxCell/>
+		</MyDiagram>
+		<MyLayer id="1">
+			<mxCell parent="0" />
+		</MyLayer>
+		<MyObject id="2">
+			<mxCell style="strokeColor=blue;fillColor=red" parent="1" vertex="1">
+				<mxGeometry x="10" y="10" width="80" height="30" as="geometry"/>
+			</mxCell>
+		</MyObject>
+	</root>
+</mxGraphModel>
