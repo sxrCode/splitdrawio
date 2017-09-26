@@ -1,0 +1,9 @@
+1. graph.panning: 右键移动容器坐标轴
+
+2. graph.view.scale： Specifies the scale.  Default is 1 (100%).放大时顶点的坐标扩大相应的倍数，缩小时减少为相应的倍数。
+
+3. graph.view.setTranslate：更改坐标原点
+
+4. mxGraph中图形区域被称作view，它是个矩形区域。其中只需要一个控制点。
+
+5. mxEvent.addListener(element, eventName, funct): 对元素添加事件响应，实际上使用了addEventListener内置方法。 

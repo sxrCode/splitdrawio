@@ -2527,10 +2527,10 @@ App.prototype.start = function()
 };
 
 /**
- * Translates this point by the given vector.
  * 
- * @param {number} dx X-coordinate of the translation.
- * @param {number} dy Y-coordinate of the translation.
+ * @param force 是否必须显示splashdialog
+ * 
+ * 
  */
 App.prototype.showSplash = function(force)
 {
