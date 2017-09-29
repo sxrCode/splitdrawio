@@ -1,0 +1,2 @@
+1. mxUtils.makeDraggable(element, graphF, funct, dragElement, dx, dy, autoscroll, scalePreview, highlightDropTargets, getDropTarget): Configures the given DOM element to act as a drag source for the specified graph.  Returns a a new mxDragSource.
+其中funct的参数是funct(graph, evt, dropTarget, x, y); dropTarget是在graph上的target.

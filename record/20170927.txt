@@ -1,0 +1,18 @@
+1. graph.setMultigraph: Specifies if the graph should allow multiple connections between the same pair of vertices. 两个顶点之间是否可多次重复链接。
+
+2. mxCell.setVertex(boolean): 指明是否是Vertex。
+
+3. graph.stopEditing: Stops the current editing and fires a <editingStopped> event. 停止当前的编辑操作
+
+4. mxEventSource: 是mxGraph定义的事件源，其方法 mxEventSource.fireEvent(evt,sender)中的evt是mxEventObject对象。
+
+5. 一个cell是如何确定在graph上的位置和大小？：
+state.x = this.scale * (this.translate.x + state.origin.x);
+state.y = this.scale * (this.translate.y + state.origin.y);
+state.width = this.scale * geo.width;
+state.unscaledWidth = geo.width;
+state.height = this.scale * geo.height;
+
+6. Sidebar.createThumb: 创建item的缩略图，原理是利用mxCell画出图形，利用mxGraph创建出svg图像。之后将svg图像添加到a标签下，这里利用了a标签（inline-block）自动排列的特性。
+
+7. graph.getImportableCells(cells)： 返回cells中可导入到graph的那些cell.

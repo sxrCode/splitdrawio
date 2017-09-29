@@ -1782,11 +1782,14 @@ Sidebar.prototype.createThumb = function(cells, width, height, parent, title, sh
 	this.graph.view.scaleAndTranslate(1, 0, 0);
 	this.graph.addCells(cells);
 	var bounds = this.graph.getGraphBounds();
+
+	//// cells的尺寸随着s比例同时变化，
 	var s = Math.floor(Math.min((width - 2 * this.thumbBorder) / bounds.width,
 			(height - 2 * this.thumbBorder) / bounds.height) * 100) / 100;
+
+	//// 保证cells完全在范围内，保证cells居中。要想显示的美观，cells同bounds的比例应与（width - 2 * this.thumbBorder）/ width 的比例相同
 	this.graph.view.scaleAndTranslate(s, Math.floor((width - bounds.width * s) / 2 / s - bounds.x),
-			Math.floor((height - bounds.height * s) / 2 / s - bounds.y));
-	
+			Math.floor((height - bounds.height * s) / 2 / s - bounds.y));	
 	var node = null;
 	
 	// For supporting HTML labels in IE9 standards mode the container is cloned instead
