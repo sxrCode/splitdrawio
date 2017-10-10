@@ -10729,7 +10729,7 @@ mxGraph.prototype.getDropTarget = function(cells, evt, cell, clone)
 		if (tmp == cell)
 		{
 			cell = swimlane;
-		}
+		}	
 	}
 	
 	while (cell != null && !this.isValidDropTarget(cell, cells, evt) &&

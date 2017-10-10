@@ -1,0 +1,5 @@
+1. mxLayoutManager.getLayout(parent): 返回要为给定图形和父项执行的布局。
+
+2. Sidebar.createDragSource(elt, dropHandler, preview, cells, bounds): 
+
+3. mxDragSource: 
